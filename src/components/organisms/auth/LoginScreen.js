@@ -40,7 +40,7 @@ const LoginScreen = () => {
       <Transition show={isOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="fixed inset-0 z-10 flex flex-row items-center justify-center h-full overflow-y-auto"
+          className="fixed inset-0 z-10 flex flex-row items-center justify-center h-screen overflow-y-auto"
           onClose={() => setIsOpen(false)}
           initialFocus={firstInput}
         >
