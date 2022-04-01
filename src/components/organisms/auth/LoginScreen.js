@@ -78,7 +78,7 @@ const LoginScreen = () => {
                   setFunction={() => setIsOpen(false)}
                 />
               </div>
-              <div className=" bg-white relative flex flex-col min-h-[530px] items-center w-full modal-2:h-full modal-2:rounded-[0px_16px_16px_0px] top-8modal-2:w-1/2 modal-1:w-3/4">
+              <div className=" bg-white relative flex flex-col min-h-[510px] items-center w-full modal-2:min-h-full modal-2:rounded-[0px_16px_16px_0px] top-8modal-2:w-1/2 modal-1:w-3/4">
                 <Button
                   styles={`${styles.DANGER_BUTTON} absolute right-1 hidden modal-2:block`}
                   content={<AiOutlineCloseCircle />}
@@ -96,7 +96,7 @@ const LoginScreen = () => {
                 >
                   El lugar donde podrás encontrar la mayor variedad de subastas
                   de Argentina.
-                  <span className="modal-1:block">Busca, pujá y ganá!</span>
+                  <span className="modal-1:block"> Busca, pujá y ganá!</span>
                 </Dialog.Description>
 
                 <form
@@ -145,7 +145,7 @@ const LoginScreen = () => {
                       ¿Olvidaste tu contraseña?
                     </p>
                   </div>
-                  <div className="flex flex-col items-center w-full mt-8 bg-white ">
+                  <div className="flex flex-col items-center w-full mt-8 bg-white modal-2:mt-5 ">
                     <p className="mb-2 text-light-blue">
                       ¿Todavía no tienes una cuenta?
                     </p>
