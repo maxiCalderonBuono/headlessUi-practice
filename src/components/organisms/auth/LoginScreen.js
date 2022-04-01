@@ -78,7 +78,7 @@ const LoginScreen = () => {
                   setFunction={() => setIsOpen(false)}
                 />
               </div>
-              <div className="relative flex flex-col h-screen items-center w-full  modal-2:rounded-[0px_16px_16px_0px] top-8modal-2:w-1/2 modal-1:w-3/4">
+              <div className=" bg-white relative flex flex-col h-screen items-center w-full  modal-2:rounded-[0px_16px_16px_0px] top-8modal-2:w-1/2 modal-1:w-3/4">
               <Button
                   styles={`${styles.DANGER_BUTTON} absolute right-1 hidden modal-2:block`}
                   content={<AiOutlineCloseCircle />}
