@@ -21,7 +21,7 @@ const RegisterScreen = () => {
       <Transition show={isOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="fixed inset-0 z-10 flex flex-row items-center justify-center h-screen overflow-y-auto"
+          className="fixed inset-0 z-10 flex flex-row items-center justify-center h-full overflow-y-auto"
           onClose={() => setIsOpen(false)}
           initialFocus={firstInput}
         >
@@ -59,7 +59,7 @@ const RegisterScreen = () => {
                   setFunction={() => setIsOpen(false)}
                 />
               </div>
-              <div className="relative flex flex-col items-center w-full h-full  modal-2:rounded-[0px_16px_16px_0px] top-8modal-2:w-1/2 modal-1:w-3/4">
+              <div className="relative flex flex-col items-center w-full h-full modal-2:rounded-[0px_16px_16px_0px] top-8modal-2:w-1/2 modal-1:w-3/4">
                 <Button
                   styles={`${styles.DANGER_BUTTON} absolute right-1 hidden modal-2:block`}
                   content={<AiOutlineCloseCircle />}
@@ -153,7 +153,7 @@ const RegisterScreen = () => {
                     content="Registrarse"
                   />
                 </form>
-                <div className="absolute flex flex-col items-center w-full bottom-2 modal-2:bottom-5 modal-1:bottom-7">
+                <div className="absolute flex flex-col items-center w-full top-[530px] modal-2:top-[520px] modal-1:top-[400px] bg-white">
                   <p className="text-light-blue">¿Ya tienes una cuenta?</p>
                   <Link className={`${styles.GHOST_BUTTON} text-xl h-9 w-4/5 text-center align-middle leading-[1.75]`} to="/auth/login">
                    Iniciar Sesión
@@ -169,3 +169,4 @@ const RegisterScreen = () => {
 };
 
 export default RegisterScreen;
+

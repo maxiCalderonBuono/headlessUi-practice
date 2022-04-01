@@ -40,7 +40,7 @@ const LoginScreen = () => {
       <Transition show={isOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="fixed inset-0 z-10 flex flex-row items-center justify-center h-screen overflow-y-auto"
+          className="fixed inset-0 z-10 flex flex-row items-center justify-center h-full overflow-y-auto"
           onClose={() => setIsOpen(false)}
           initialFocus={firstInput}
         >
@@ -143,14 +143,14 @@ const LoginScreen = () => {
                     ¿Olvidaste tu contraseña?
                   </p>
                 </form>
-                <div className="absolute flex flex-col items-center w-full bottom-10 modal-2:bottom-5 modal-1:bottom-7">
+                <div className="absolute flex flex-col items-center w-full top-[420px] modal-2:top-96">
                   <p className="mb-2 text-light-blue">
                     ¿Todavía no tienes una cuenta?
                   </p>
                   <Link
                     className={`${styles.GHOST_BUTTON} text-xl h-9 w-4/5 text-center leading-[1.75]`}
                     to="/auth/register"
-                  >
+                  > 
                     Registrarse
                   </Link>
                 </div>
