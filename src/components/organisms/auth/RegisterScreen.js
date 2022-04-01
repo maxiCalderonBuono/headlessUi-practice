@@ -21,7 +21,7 @@ const RegisterScreen = () => {
       <Transition show={isOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="fixed inset-0 z-10 flex flex-row items-center justify-center h-screen overflow-y-auto bg-white"
+          className="fixed inset-0 z-10 flex flex-row items-center justify-center h-full overflow-y-auto bg-white"
           onClose={() => setIsOpen(false)}
           initialFocus={firstInput}
         >
@@ -59,7 +59,7 @@ const RegisterScreen = () => {
                   setFunction={() => setIsOpen(false)}
                 />
               </div>
-              <div className=" bg-white relative modal-2:h-full flex flex-col items-center w-full h-full modal-2:rounded-[0px_16px_16px_0px] top-8modal-2:w-1/2 modal-1:w-3/4">
+              <div className=" bg-white relative flex flex-col items-center w-full min-h-full modal-2:rounded-[0px_16px_16px_0px] top-8modal-2:w-1/2 modal-1:w-3/4">
                 <Button
                   styles={`${styles.DANGER_BUTTON} absolute right-1 hidden modal-2:block`}
                   content={<AiOutlineCloseCircle />}
@@ -149,12 +149,12 @@ const RegisterScreen = () => {
                     </div>
                   </div>
                   
-                  <div className="flex flex-col items-center w-full top-[530px] modal-2:top-[520px] modal-1:top-[400px] bg-white">
+                  <div className="flex flex-col items-center w-full mt-8 bg-white">
                   <Button
                     styles={`${styles.PRIMARY_BUTTON} text-xl h-9 w-4/5`}
                     content="Registrarse"
                   />
-                    <p className="text-light-blue">¿Ya tienes una cuenta?</p>
+                    <p className="mt-8 text-light-blue">¿Ya tienes una cuenta?</p>
                     <Link
                       className={`${styles.GHOST_BUTTON} text-xl h-9 w-4/5 text-center align-middle leading-[1.75]`}
                       to="/auth/login"
