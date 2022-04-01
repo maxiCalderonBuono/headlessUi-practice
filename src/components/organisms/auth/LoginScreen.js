@@ -111,7 +111,7 @@ const LoginScreen = () => {
                     placeholder="Email"
                     value={email}
                     onChange={handleInputChange}
-                    className="w-4/5 h-10 border-2 border-solid border-text-secondary rounded-[43px] mb-4 p-2"
+                    className="w-4/5 h-10 border-2 border-solid outline-none border-text-secondary rounded-[43px] mb-4 p-2"
                     ref={firstInput}
                   />
                   <label
@@ -127,7 +127,7 @@ const LoginScreen = () => {
                     placeholder="Password"
                     value={password}
                     onChange={handleInputChange}
-                    className="w-4/5 h-10 border-2 border-solid border-text-secondary rounded-[43px] mb-4 p-2"
+                    className="w-4/5 h-10 border-2 border-solid outline-none border-text-secondary rounded-[43px] mb-4 p-2"
                   />
                   <Button
                     styles={`${styles.PRIMARY_BUTTON} text-xl h-9 w-4/5`}

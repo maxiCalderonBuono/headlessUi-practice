@@ -94,7 +94,7 @@ const RegisterScreen = () => {
                         name="user"
                         autoComplete="off"
                         placeholder="Usuario"
-                        className="w-5/6 t h-10 border-2 border-solid border-text-secondary rounded-[43px] mb-4 p-2 text-sm"
+                        className="w-5/6 t h-10 border-2 border-solid outline-none border-text-secondary rounded-[43px] mb-4 p-2 text-sm"
                         ref={firstInput}
                       />
                     </div>
@@ -111,7 +111,7 @@ const RegisterScreen = () => {
                         name="email"
                         autoComplete="off"
                         placeholder="Email"
-                        className="w-5/6 t h-10 border-2 border-solid border-text-secondary rounded-[43px] mb-4 p-2 text-sm"
+                        className="w-5/6 t h-10 border-2 border-solid outline-none border-text-secondary rounded-[43px] mb-4 p-2 text-sm"
                       />
                     </div>
                   </div>
@@ -128,7 +128,7 @@ const RegisterScreen = () => {
                         name="password"
                         autoComplete="off"
                         placeholder="Password"
-                        className="w-5/6 t h-10 border-2 border-solid border-text-secondary rounded-[43px] mb-4 p-2 text-sm"
+                        className="w-5/6 t h-10 border-2 border-solid outline-none border-text-secondary rounded-[43px] mb-4 p-2 text-sm"
                       />
                     </div>
                     <div className="flex flex-col items-center w-full modal-1:w-1/2">
@@ -144,7 +144,7 @@ const RegisterScreen = () => {
                         name="password-2"
                         autoComplete="off"
                         placeholder="Repeat Password"
-                        className="w-5/6  h-10 border-2 border-solid border-text-secondary rounded-[43px] mb-4 p-2 text-sm"
+                        className="w-5/6  h-10 border-2 border-solid outline-none border-text-secondary rounded-[43px] mb-4 p-2 text-sm"
                       />
                     </div>
                   </div>
