@@ -65,17 +65,22 @@ const LoginScreen = () => {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-50"
           >
-            <div className="relative flex bg-white rounded-2xl w-[736px] h-[480px]">
-              <div className="rounded-[16px_0px_0px_16px] bg-background_main flex items-center">
-                <img
-                  src="https://res.cloudinary.com/di57h1uhf/image/upload/v1648567242/Mejor%20postor/logo2_ehp6pn.png"
+            <div className="relative h-full flex modal-2:flex-row flex-col bg-white modal-2:rounded-2xl w-[1000px]  modal-2:h-[480px]">
+              <div className="modal-2:rounded-[16px_0px_0px_16px] bg-background_main flex flex-col items-center justify-center w-full modal-2:w-1/2 py-3 px-2">
+              <img
+                  src="https://res.cloudinary.com/dvqlenul5/image/upload/v1648833962/logo1_bzbndp.png"
                   alt="main logo"
-                  className=" w-96"
+                  className="w-72 modal-2:w-96"
+                />
+                  <Button
+                  styles={`${styles.DANGER_BUTTON} absolute top-1 right-1 block modal-2:hidden`}
+                  content={<AiOutlineCloseCircle />}
+                  setFunction={() => setIsOpen(false)}
                 />
               </div>
-              <div className="relative flex flex-col items-center w-1/2">
-                <Button
-                  styles={`${styles.DANGER_BUTTON} absolute right-1`}
+              <div className="relative flex flex-col h-full items-center w-full  modal-2:rounded-[0px_16px_16px_0px] top-8modal-2:w-1/2 modal-1:w-3/4">
+              <Button
+                  styles={`${styles.DANGER_BUTTON} absolute right-1 hidden modal-2:block`}
                   content={<AiOutlineCloseCircle />}
                   setFunction={() => setIsOpen(false)}
                 />
@@ -90,7 +95,7 @@ const LoginScreen = () => {
                   className="absolute mt-2 text-sm text-center top-20 text-text-secondary"
                 >
                   El lugar donde podrás encontrar la mayor variedad de subastas
-                  de Argentina. Busca, pujá y ganá!
+                  de Argentina.<span className="modal-1:block">Busca, pujá y ganá!</span>
                 </Dialog.Description>
 
                 <form
@@ -130,16 +135,16 @@ const LoginScreen = () => {
                     className="w-4/5 h-10 border-2 border-solid outline-none border-text-secondary rounded-[43px] mb-4 p-2"
                   />
                   <Button
-                    styles={`${styles.PRIMARY_BUTTON} text-xl h-9 w-4/5`}
+                    styles={`${styles.PRIMARY_BUTTON} text-xl h-9 w-4/5 mt-4 modal-2:mt-0`}
                     content="Iniciar Sesión"
                     type="submit"
                   />
-                </form>
-                <div className="absolute flex flex-col items-center w-full bottom-4">
-                  <p className="mb-4 text-dark-blue">
+                  <p className="mt-2 text-dark-blue">
                     ¿Olvidaste tu contraseña?
                   </p>
-                  <p className="text-light-blue">
+                </form>
+                <div className="absolute flex flex-col items-center w-full bottom-10 modal-2:bottom-5 modal-1:bottom-7">
+                  <p className="mb-2 text-light-blue">
                     ¿Todavía no tienes una cuenta?
                   </p>
                   <Link
