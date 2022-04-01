@@ -21,7 +21,7 @@ const RegisterScreen = () => {
       <Transition show={isOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="fixed inset-0 z-10 flex flex-row items-center justify-center h-screen overflow-y-auto"
+          className="fixed inset-0 z-10 flex flex-row items-center justify-center h-screen overflow-y-auto bg-white"
           onClose={() => setIsOpen(false)}
           initialFocus={firstInput}
         >
