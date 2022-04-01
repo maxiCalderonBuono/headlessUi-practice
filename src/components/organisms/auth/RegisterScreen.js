@@ -46,7 +46,7 @@ const RegisterScreen = () => {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-50"
           >
-            <div className="relative h-full flex modal-2:flex-row flex-col bg-white modal-2:rounded-2xl w-[1000px]  modal-2:h-[600px] modal-1:h-[480px]">
+            <div className="relative h-screen flex modal-2:flex-row flex-col bg-white modal-2:rounded-2xl w-[1000px]  modal-2:h-[600px] modal-1:h-[480px]">
               <div className="modal-2:rounded-[16px_0px_0px_16px] bg-background_main flex flex-col items-center justify-center w-full modal-2:w-1/2 py-3 px-2">
                 <img
                   src="https://res.cloudinary.com/dvqlenul5/image/upload/v1648833962/logo1_bzbndp.png"

@@ -78,7 +78,7 @@ const LoginScreen = () => {
                   setFunction={() => setIsOpen(false)}
                 />
               </div>
-              <div className="relative flex flex-col h-full items-center w-full  modal-2:rounded-[0px_16px_16px_0px] top-8modal-2:w-1/2 modal-1:w-3/4">
+              <div className="relative flex flex-col h-screen items-center w-full  modal-2:rounded-[0px_16px_16px_0px] top-8modal-2:w-1/2 modal-1:w-3/4">
               <Button
                   styles={`${styles.DANGER_BUTTON} absolute right-1 hidden modal-2:block`}
                   content={<AiOutlineCloseCircle />}
@@ -143,7 +143,7 @@ const LoginScreen = () => {
                     ¿Olvidaste tu contraseña?
                   </p>
                 </form>
-                <div className="absolute flex flex-col items-center w-full top-[420px] modal-2:top-96">
+                <div className="absolute flex flex-col items-center w-full top-[420px] modal-2:top-96 bg-white">
                   <p className="mb-2 text-light-blue">
                     ¿Todavía no tienes una cuenta?
                   </p>
