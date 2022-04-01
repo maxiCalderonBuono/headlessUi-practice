@@ -21,7 +21,7 @@ const RegisterScreen = () => {
       <Transition show={isOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="fixed inset-0 z-10 flex flex-row items-center justify-center overflow-y-auto"
+          className="fixed inset-0 z-10 flex flex-row items-center justify-center overflow-y-auto h-[900px]"
           onClose={() => setIsOpen(false)}
           initialFocus={firstInput}
         >
@@ -46,20 +46,20 @@ const RegisterScreen = () => {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-50"
           >
-            <div className="relative h-[915px] flex modal-2:flex-row flex-col bg-white rounded-2xl w-[1000px]  modal-2:h-[600px] modal-1:h-[480px]">
-              <div className="rounded-[16px_0px_0px_16px] bg-background_main flex flex-col items-center justify-center w-full modal-2:w-1/2 pt-3">
+            <div className="relative h-full flex modal-2:flex-row flex-col bg-white modal-2:rounded-2xl w-[1000px]  modal-2:h-[600px] modal-1:h-[480px]">
+              <div className="modal-2:rounded-[16px_0px_0px_16px] bg-background_main flex flex-col items-center justify-center w-full modal-2:w-1/2 py-3 px-2">
                 <img
-                  src="https://res.cloudinary.com/di57h1uhf/image/upload/v1648567242/Mejor%20postor/logo2_ehp6pn.png"
+                  src="https://res.cloudinary.com/dvqlenul5/image/upload/v1648833962/logo1_bzbndp.png"
                   alt="main logo"
-                  className="w-80 modal-2:w-96"
+                  className="w-72 modal-2:w-96"
                 />
                 <Button
-                  styles={`${styles.DANGER_BUTTON} absolute top-8 right-1 block modal-2:hidden`}
+                  styles={`${styles.DANGER_BUTTON} absolute top-1 right-1 block modal-2:hidden`}
                   content={<AiOutlineCloseCircle />}
                   setFunction={() => setIsOpen(false)}
                 />
               </div>
-              <div className="relative flex flex-col items-center w-full h-full modal-2:w-1/2 modal-1:w-3/4">
+              <div className="relative flex flex-col items-center w-full h-full  modal-2:rounded-[0px_16px_16px_0px] top-8modal-2:w-1/2 modal-1:w-3/4">
                 <Button
                   styles={`${styles.DANGER_BUTTON} absolute right-1 hidden modal-2:block`}
                   content={<AiOutlineCloseCircle />}
@@ -153,7 +153,7 @@ const RegisterScreen = () => {
                     content="Registrarse"
                   />
                 </form>
-                <div className="absolute flex flex-col items-center w-full bottom-1 modal-2:bottom-5 modal-1:bottom-7">
+                <div className="absolute flex flex-col items-center w-full bottom-2 modal-2:bottom-5 modal-1:bottom-7">
                   <p className="text-light-blue">¿Ya tienes una cuenta?</p>
                   <Link className={`${styles.GHOST_BUTTON} text-xl h-9 w-4/5 text-center align-middle leading-[1.75]`} to="/auth/login">
                    Iniciar Sesión
