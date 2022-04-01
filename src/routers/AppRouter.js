@@ -11,7 +11,7 @@ const AppRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/auth/*" element={<AuthRouter />} />
+        <Route path="/*" element={<AuthRouter />} />
       </Routes>
     </Router>
   );

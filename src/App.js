@@ -16,7 +16,7 @@ function App() {
       <div className="flex justify-center w-full h-full p-8 md:h-full bg-background_main">
         {/*<NavBar />
       <ProductListContainer /> */}
-        <Button styles={styles.PRIMARY_BUTTON} content="Login" />
+       
         <AppRouter />
       </div>
     </Provider>

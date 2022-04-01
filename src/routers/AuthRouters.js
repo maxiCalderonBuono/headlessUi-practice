@@ -10,7 +10,7 @@ const AuthRouter = () => {
       <div>
         <Routes>
           <Route path="login" element={<LoginScreen />} />
-          <Route path="register" element={<RegisterScreen />} />
+          <Route path="auth/register" element={<RegisterScreen />} />
           <Route path="*" element={<LoginScreen />} />
         </Routes>
       </div>
