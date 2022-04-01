@@ -135,14 +135,16 @@ const LoginScreen = () => {
                     onChange={handleInputChange}
                     className="w-4/5 h-10 border-2 border-solid outline-none border-text-secondary rounded-[43px] mb-4 p-2"
                   />
-                  <Button
-                    styles={`${styles.PRIMARY_BUTTON} text-xl h-9 w-4/5 mt-4 modal-2:mt-0`}
-                    content="Iniciar Sesión"
-                    type="submit"
-                  />
-                  <p className="mt-2 text-dark-blue">
-                    ¿Olvidaste tu contraseña?
-                  </p>
+                  <div className="w-full text-center bg-white">
+                    <Button
+                      styles={`${styles.PRIMARY_BUTTON} text-xl h-9 w-4/5 mt-4 modal-2:mt-0`}
+                      content="Iniciar Sesión"
+                      type="submit"
+                    />
+                    <p className="mt-2 text-dark-blue">
+                      ¿Olvidaste tu contraseña?
+                    </p>
+                  </div>
                   <div className=" flex flex-col items-center w-full top-[420px] modal-2:top-96 bg-white">
                     <p className="mb-2 text-light-blue">
                       ¿Todavía no tienes una cuenta?

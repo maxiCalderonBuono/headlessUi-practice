@@ -115,7 +115,7 @@ const RegisterScreen = () => {
                       />
                     </div>
                   </div>
-                  <div className="flex flex-col w-full modal-1:flex-row modal-1:justify-center modal-1:mb-4">
+                  <div className="flex flex-col w-full bg-white modal-1:flex-row modal-1:justify-center modal-1:mb-4">
                     <div className="flex flex-col items-center w-full modal-1:w-1/2">
                       <label
                         for="email"
@@ -148,11 +148,12 @@ const RegisterScreen = () => {
                       />
                     </div>
                   </div>
+                  
+                  <div className="flex flex-col items-center w-full top-[530px] modal-2:top-[520px] modal-1:top-[400px] bg-white">
                   <Button
                     styles={`${styles.PRIMARY_BUTTON} text-xl h-9 w-4/5`}
                     content="Registrarse"
                   />
-                  <div className="flex flex-col items-center w-full top-[530px] modal-2:top-[520px] modal-1:top-[400px] bg-white">
                     <p className="text-light-blue">¿Ya tienes una cuenta?</p>
                     <Link
                       className={`${styles.GHOST_BUTTON} text-xl h-9 w-4/5 text-center align-middle leading-[1.75]`}
