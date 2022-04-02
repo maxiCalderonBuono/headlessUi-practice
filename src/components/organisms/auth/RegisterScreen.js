@@ -150,7 +150,7 @@ const RegisterScreen = () => {
                     </div>
                   </div>
                   
-                  <div className="flex flex-col items-center w-full mt-8 bg-white modal-2:mt-4">
+                  <div className="flex flex-col items-center w-full mt-4 bg-white modal-2:mt-4">
                   <Button
                     styles={`${styles.PRIMARY_BUTTON} text-xl h-9 w-4/5`}
                     content="Registrarse"
