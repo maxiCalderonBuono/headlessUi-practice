@@ -68,9 +68,9 @@ const LoginScreen = () => {
             <div className="relative h-full flex modal-2:flex-row flex-col bg-white modal-2:rounded-2xl w-[1000px]  modal-2:h-[480px]">
               <div className="modal-2:rounded-[16px_0px_0px_16px] bg-background_main flex flex-col items-center justify-center w-full modal-2:w-1/2 py-3 px-2">
                 <img
-                  src="https://res.cloudinary.com/dvqlenul5/image/upload/v1648833962/logo1_bzbndp.png"
+                  src="https://res.cloudinary.com/dvqlenul5/image/upload/v1648904794/logo1_ykmcgn.png"
                   alt="main logo"
-                  className="w-72 modal-2:w-96"
+                  className="modal-2:w-72 w-60"
                 />
                 <Button
                   styles={`${styles.DANGER_BUTTON} absolute top-1 right-1 block modal-2:hidden`}
@@ -92,7 +92,7 @@ const LoginScreen = () => {
                 </Dialog.Title>
                 <Dialog.Description
                   as="p"
-                  className="absolute mt-2 text-sm text-center top-20 text-text-secondary"
+                  className="absolute px-4 mt-2 text-sm text-center modal-1:px-0 top-20 text-text-secondary"
                 >
                   El lugar donde podrás encontrar la mayor variedad de subastas
                   de Argentina.
