@@ -86,13 +86,13 @@ const LoginScreen = () => {
                 />
                 <Dialog.Title
                   as="h1"
-                  className="absolute mt-3 text-2xl italic font-bold text-text-primary top-8"
+                  className="absolute mt-3 text-2xl italic font-bold text-text-primary modal-2:top-8"
                 >
                   Bienvenidos a Mejor postor
                 </Dialog.Title>
                 <Dialog.Description
                   as="p"
-                  className="absolute px-4 mt-2 text-sm text-center modal-1:px-0 top-20 text-text-secondary"
+                  className="absolute px-4 mt-2 text-sm text-center modal-1:px-0 top-12 modal-2:top-20 text-text-secondary"
                 >
                   El lugar donde podrás encontrar la mayor variedad de subastas
                   de Argentina.
@@ -101,7 +101,7 @@ const LoginScreen = () => {
 
                 <form
                   onSubmit={handleSubmit}
-                  className="absolute flex flex-col items-center w-full top-36"
+                  className="absolute flex flex-col items-center w-full top-28 modal-2:top-36"
                 >
                   <label
                     for="email"
